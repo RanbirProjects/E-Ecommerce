@@ -62,3 +62,4 @@ ecommerce-store/
 - Database: MongoDB
 - Authentication: JWT
 - Image Storage: Cloudinary # E-Ecommerce
+# E-Ecommerce
