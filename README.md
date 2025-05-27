@@ -3,7 +3,20 @@
 A full-stack e-commerce application built with the MERN stack (MongoDB, Express.js, React.js, Node.js).
 
 ## Features
+Welcome page
+![Image 27-05-25 at 10 40 PM](https://github.com/user-attachments/assets/b3efd81d-2942-4720-b9b4-24935046bbc3)
+
+Login page
+![Image 27-05-25 at 10 41 PM](https://github.com/user-attachments/assets/51053446-a83e-4dd4-b35d-c0ea0b413eca)
+
+
+Product page
+![Image 27-05-25 at 10 41 PM](https://github.com/user-attachments/assets/546a7ada-a0e4-44d8-aa10-8ca933b9e29f)
+
+
+Registration page
 ![Image 27-05-25 at 10 21 PM](https://github.com/user-attachments/assets/9070234f-9581-4f9d-a393-e26c4c277ebf)
+
 
 
 - User authentication
