@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ensure content appears above the background */
+.App > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-container {
+  background-image: url('/images/my background image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/my background image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: subtleZoom 20s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes subtleZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Styling for the product tabs on the Home page */
+.MuiTabs-indicator {
+  background-color: #1976d2 !important; /* Primary color */
+  transition: all 0.3s ease-in-out !important;
+}
+
+.MuiTab-root {
+  color: rgba(0, 0, 0, 0.6) !important; /* Default tab text color */
+  font-weight: 500 !important;
+  transition: color 0.3s ease-in-out !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: #1976d2 !important; /* Active tab text color */
+  font-weight: 700 !important;
+}
+
+.MuiTab-root:hover {
+  color: #1976d2 !important; /* Hover tab text color */
+}
